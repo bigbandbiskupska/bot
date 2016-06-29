@@ -1,0 +1,35 @@
+{block title}
+Bot
+{/block}
+
+{block top-content}
+
+	<style>
+
+
+
+body {
+	background: transparent;
+}
+</style>
+{*
+	<div class="container-fluid pic picture">
+		<header class="" style="background: url('{$basePath}/img/band/01.jpg') no-repeat scroll center center / cover" >
+
+	    	<!--<img src="{$basePath}/img/band/01.jpg" alt="Big Band Biskupská" class="img-responsive" />-->
+		</header>
+		<div class="img-gradient-bottom"></div>
+	</div>
+	*}
+
+
+	<div class="container">
+		<div class="jumbotron">
+			<h1>{$name}</h1>
+			<p>
+				{$description|noescape|activate|texy}
+			</p>
+		</div>
+	</div>
+
+{/block}

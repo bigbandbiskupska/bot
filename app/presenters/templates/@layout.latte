@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta lang="cs" />
+	<meta name="viewport" content="width=device-width" />
+
+	<meta name="description" content="Informace o hudebním tělese Big Band Biskupská patřící pod ZUŠ Biskupská." />
+	<meta name="author" content="Big Band Biskupská" />
+	<meta name="copyright" content="Tuli" />
+
+	<meta property="og:site_name" content="BigBandBiskupská.cz">
+	<meta property="og:description" content="ČSFD.cz">
+	<meta property="og:title" content="Informace o hudebním tělese Big Band Biskupská patřící pod ZUŠ Biskupská.">
+
+	<link rel="canonical" href="http://bigbandbiskupska.cz/">
+
+	<meta name="application-name" content="BigBandBiskupská.cz">
+	<meta name="msapplication-tooltip" content="Navštívit BigBandBiskupská.cz">
+	<meta name="msapplication-starturl" content="http://bigbandbiskupska.cz/">
+
+	<meta name="msapplication-task" content="name=Koncerty;action-uri=/koncerty/;icon-uri=http://bigbandbiskupska.cz/img/icons/bbb.ico">
+	<meta name="msapplication-task" content="name=Galerie;action-uri=/galerie/;icon-uri=http://bigbandbiskupska.cz/img/icons/bbb.ico">
+	<meta name="msapplication-task" content="name=Kontakt;action-uri=/kontakt/;icon-uri=http://bigbandbiskupska.cz/img/icons/bbb.ico">
+	<meta name="msapplication-task" content="name=Kapela;action-uri=/kapela/;icon-uri=http://bigbandbiskupska.cz/img/icons/bbb.ico">
+
+	{block sheets}
+	<link rel="stylesheet" type="text/css" href="{$basePath}/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="{$basePath}/css/blueimp-gallery.min.css">
+	<link rel="stylesheet" type="text/css" href="{$basePath}/css/bootstrap-image-gallery.min.css">
+	<link rel="stylesheet" type="text/css" href="{$basePath}/css/style.css" />
+	{/block}
+
+	<link rel="icon" href="{$basePath}/img/icons/bbb.ico">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<title>{ifset title}{include title|striptags} | {/ifset}Big Band Biskupská</title>
+</head>
+
+<body class="full">
+
+	<nav class="navbar navbar-default navbar-menu navbar-fixed-top" id="navbar-top">
+	  <div class="container">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mini-nav-menu" aria-expanded="false">
+	        <span class="sr-only">Zobrazit menu</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      	{*<img src="{$basePath}/img/icons/bbb.ico" alt="Ikona" class="navbar-left img img50x50 img-responsive" />*}
+	      	<div class="">
+				<img src="{$basePath}/img/icons/bbb.ico" 
+				 alt="Logo"
+				 role="logo"
+				 class="img pull-left navbar-logo" />
+
+			    <a href="http://bigbandbiskupska.cz" 
+			       title="Domů"
+			       class="navbar-brand pull-left">
+			    	Big Band Biskupská
+			    </a>
+			</div>
+	    </div>
+	    <div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right" role="tablist">
+		        <li>
+		        	<a href="{link Homepage:default}" class="">
+		        		Další
+		        	</a>
+		        </li>
+			</ul>
+	    </div><!-- /.navbar-collapse -->
+
+	  </div><!-- /.container -->
+	</nav>
+
+
+
+	{block top-content}
+
+	{/block}
+
+	<nav class="navbar navbar-default navbar-fixed-bottom copyright">
+	  <div class="container text-center">
+	  	Big Band Biskupská 2016 &copy; Tuli
+	  </div>
+	</nav>
+
+
+	{block scripts}
+	<script src="{$basePath}/js/jquery.min.js"></script>
+	<script src="{$basePath}/js/bootstrap.min.js"></script>
+
+	<script src="{$basePath}/js/jquery.blueimp-gallery.min.js"></script>
+	<script src="{$basePath}/js/bootstrap-image-gallery.min.js"></script>
+	<script src="{$basePath}/js/nette.ajax.js"></script>
+	<script src="{$basePath}/js/spinner.ajax.js"></script>
+
+	<script src="{$basePath}/js/main.js"></script>
+	{/block}
+
+	<script n:if="$productionMode" type="text/javascript">
+	  /* <![CDATA[ */
+	  (function(i,s,o,g,r,a,m){l}i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){l}
+	  (i[r].q=i[r].q||[]).push(arguments){r},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  {r})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-79563712-1', 'auto');
+	  ga('send', 'pageview');
+       /* ]]> */
+	</script>
+</body>
+</html>
+
+
+
