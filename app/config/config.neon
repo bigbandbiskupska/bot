@@ -19,7 +19,8 @@ session:
 
 
 services:
-	router: App\RouterFactory::createRouter
+	routerFactory: App\RouterFactory
+	router: @routerFactory::createRouter
 	members: App\Model\MemberModel()
 
 extensions:
