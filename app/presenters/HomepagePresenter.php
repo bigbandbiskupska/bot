@@ -188,7 +188,7 @@ class HomepagePresenter extends BasePresenter
 			"klávesy" => "klávesy",
 			"flétna" => "flétny",
 			"trombón" => "trombóny",
-			"zpěv" => "zpěv",
+			"zpěv" => "zpěvy",
 			"kytara" => "kytary",
 			"lesní roh" => "lesní rohy",
 			"dirigent" => "dirigenti",
