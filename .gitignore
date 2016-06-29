@@ -1,1 +1,4 @@
 app/config/config.local.neon
+log/*
+temp/cache/*
+composer.lock
