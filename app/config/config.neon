@@ -21,3 +21,6 @@ session:
 services:
 	router: App\RouterFactory::createRouter
 	members: App\Model\MemberModel()
+
+extensions:
+	git: Tulinkry\DI\GitExtension
